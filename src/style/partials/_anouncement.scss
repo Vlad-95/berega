@@ -1,0 +1,133 @@
+.anouncement-block {
+    &__item {
+        display: flex;
+        margin-bottom: 120px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    &__content {
+        flex-basis: 50%;
+        padding-right: 50px;
+
+        p {
+            font-size: 18px;
+            line-height: 32px;
+            max-width: none;
+            margin: 0;
+            color: #707070;
+        }
+    }
+    
+    &__title, h3 {
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 700;
+        color: $black;
+        letter-spacing: -0.64px;
+        margin-bottom: 24px;
+        font-family: $bebas;
+    }
+
+    ul {
+        margin-bottom: 0;
+
+        li {
+            position: relative;
+            font-size: 18px;
+            line-height: 32px;
+            color: #707070;
+            padding-left: 18px;
+
+            &:before {
+                content: "";
+                background-color: $red;
+                width: 8px;
+                height: 2px;
+                top: 13px;
+                left: 3px;
+                position: absolute;
+            }
+        }
+    }
+
+    &__more, a {
+        display: inline-block;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 15px;
+        color: $white;
+        padding: 20px 42px;
+        background-color: $red;
+        margin-top: 32px;
+        transition: 0.3s;
+
+        &:hover {
+            background-color: $dark-blue;
+        }
+    }
+
+    &__image {
+        flex-basis: 50%;
+        height: 307px;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+
+    &__item--img-left {
+        .anouncement-block__content {
+            flex-basis: 50%;
+            padding-right: 0;
+            padding-left: 50px;
+            order: 2;
+        }
+
+        .anouncement-block__image {
+            order: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .anouncement-block {
+        &__item {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__content {
+            flex-basis: 100%;
+            padding-right: 0;
+            order: 1;
+            margin-bottom: 24px;
+        }
+    
+        &__image {
+            flex-basis: 100%;
+            order: 2;
+            height: auto;
+            max-height: 300px;
+            
+        }
+    
+    
+        &__item--img-left {
+            .anouncement-block__content {
+                flex-basis: 100%;
+                padding-right: 0;
+                padding-left: 0;
+                order: 1;
+            }
+    
+            .anouncement-block__image {
+                order: 2;
+            }
+        }
+    }
+}

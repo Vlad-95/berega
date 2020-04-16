@@ -1,0 +1,35 @@
+.breadcrumbs {
+    position: relative;
+    z-index: 2;
+    &__item {
+        color: $white;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+        color: #f9f9f9;
+        text-transform: uppercase;
+        position: relative;
+        padding-right: 8px;
+        transition: 0.3s;
+
+        &:hover {
+            color: rgba($color: #f9f9f9, $alpha: 0.6);
+        }
+        &:last-of-type:after {
+            display: none;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            right: 1px;
+            top: -2px;
+            bottom: 0;
+            margin: auto;
+            width: 1px;
+            height: 12px;
+            transform: rotate(25deg);
+            background-color: #f9f9f9;
+        }
+    }
+}

@@ -1,0 +1,145 @@
+// FONTS
+$bebas: 'bebas', sans-serif;
+$roboto: 'Roboto', sans-serif;
+
+// COLORS
+$grey: #666666;
+$red: #cc2929;
+$dark-blue: #314d68;
+$black: #1b1a1a;
+$white: #ffffff;
+$text: #000000;
+
+
+// Main
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &:before,
+    &:after {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  }
+  html, body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: $roboto;
+    position: relative;
+    /*line-height: 32px;*/
+    font-size: 18px;
+    
+  }
+  
+  ol,
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+    transition: all .2s;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  input,
+  textarea,
+  button {
+    outline: none;
+    -webkit-appearance: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  textarea {
+    resize: none;
+  }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+  }
+
+  @keyframes contactItem {
+    0% {
+      opacity: 0;
+      left: 150px;
+      display: none;
+    }
+    1% {
+      display: block;
+    }
+    
+    100% {
+      opacity: 1;
+      left: 48px;
+    }
+  }
+
+  @keyframes fixedMenu {
+    0% {
+      top: -100px;
+    }
+
+    100% {
+      top: 0;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      padding: 0 24px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0 16px;
+    }
+
+    @keyframes contactItem {
+      0% {
+        opacity: 0;
+        left: 150px;
+        display: none;
+      }
+      1% {
+        display: block;
+      }
+      
+      100% {
+        opacity: 1;
+        left: 16px;
+      }
+    }
+  }

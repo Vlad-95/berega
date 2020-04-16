@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__Group_253" width="52" height="52" data-name="Group 253" viewBox="0 0 52 52">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#fff}
+        </style>
+    </defs>
+    <path id="prefix__BG" d="M0 0H52V52H0z" style="fill:#cc2929"/>
+    <path id="prefix__Op_component_1" d="M0 0H16.97V2.01H0z" class="prefix__cls-2" data-name="Op component 1" transform="translate(19 24.98)"/>
+    <path id="prefix__Op_component_2" d="M3.15 7.049l2.642 3.321a1.013 1.013 0 01-.156 1.416 1 1 0 01-1.41-.158L.219 6.591a1.011 1.011 0 010-1.258L4.226.3a.968.968 0 01.422-.3h.734a1.013 1.013 0 01.253.14 1.013 1.013 0 01.156 1.416l-2.769 3.48" class="prefix__cls-2" data-name="Op component 2" transform="translate(15.982 19.984)"/>
+</svg>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Текстовая страница</title>
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    //= partials/_header.html
+
+    <main>
+        <section class="section page-title page-title--big">
+            <div class="container">
+                <div class="page-title__wrap">
+                    //= partials/_breadcrumbs.html
+                    <h1 class="page-title__text page-title__text--long">Заголовок страницы первого уровня в две строки</h1>
+                    <h2 class="page-title__descr">Описание страницы, которая должна увлечь посетителя и кратко расскзаать о чем будет идти речь.</h2>
+                    <p class="page-title__date">11 ноября 2020</p>
+
+                    <div class="page-title__img">
+                        <img src="img/page-title.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section page-content text-page-content">
+            
+            <div class="container">
+            
+                <h2>Очень длинный заголовок второго уровня в две строки</h2>
+                <p>
+                        Хорошо, если уже есть опыт работы с тем или иным банком – тогда вы скорее 
+                        всего уже понимаете, какие услуги нужны именно вам, сколько вы готовы 
+                        платить за услуги банка, и какой уровень сервиса и режим доступности услуг 
+                        будут полностью отвечать вашему стилю работы. 
+                        А если опыта еще нет?
+                </p>
+
+                <h3>Очень длинный заголовок третьего уровня в две строки</h3>
+                <p>
+                        Хорошо, если уже есть опыт работы с тем или иным банком – тогда вы скорее 
+                        всего уже понимаете, какие услуги нужны именно вам, сколько вы готовы 
+                        платить за услуги банка, и какой уровень сервиса и режим доступности услуг 
+                        будут полностью отвечать вашему стилю <a href="javascript:;">работы</a>. 
+                        А если опыта еще нет?
+                </p>
+
+                <div class="overflow-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="table__date table__head">Дата</th>
+                                <th class="table__name table__head">Наименование</th>
+                                <th class="table__number table__head">Числовое значение</th>
+                                <th class="table__percent table__head">Проценты</th>
+                                <th class="table__phone table__head">Телефон</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table__date">17.04.2020</td>
+                                <td class="table__name">Совместное ведение онлайн-банка</td>
+                                <td class="table__number">8200</td>
+                                <td class="table__percent">21%</td>
+                                <td class="table__phone">3.54863355</td>
+                            </tr>
+                            <tr>
+                                <td class="table__date">17.04.2020</td>
+                                <td class="table__name">Совместное ведение онлайн-банка</td>
+                                <td class="table__number">8200</td>
+                                <td class="table__percent">21%</td>
+                                <td class="table__phone">549.90225</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+
+                //= partials/_quote-small.html
+
+                //= partials/_quote-big.html
+                
+                //= partials/_lists.html
+                
+                //= partials/_image-carousel.html
+
+
+                <div class="date-carousel">
+                    <div class="date-carousel__wrap">
+                        <a href="javascript:;" class="date-carousel__item date-carousel__item--prev">2019</a>
+                        <div class="date-carousel__slider">
+                            <a href="javascript:;" class="date-carousel__item">Январь</a>
+                            <a href="javascript:;" class="date-carousel__item">Февраль</a>
+                            <a href="javascript:;" class="date-carousel__item">Март</a>
+                            <a href="javascript:;" class="date-carousel__item">Апрель</a>
+                            <a href="javascript:;" class="date-carousel__item">Май</a>
+                            <a href="javascript:;" class="date-carousel__item">Июнь</a>
+                            <a href="javascript:;" class="date-carousel__item">Июль</a>
+                            <a href="javascript:;" class="date-carousel__item">Август</a>
+                            <a href="javascript:;" class="date-carousel__item">Сентябрь</a>
+                            <a href="javascript:;" class="date-carousel__item">Октябрь</a>
+                            <a href="javascript:;" class="date-carousel__item">Ноябрь</a>
+                            <a href="javascript:;" class="date-carousel__item">Декабрь</a>
+                        </div>
+                        <a href="javascript:;" class="date-carousel__item date-carousel__item--next">2020</a>
+
+                    </div>
+                </div>
+
+                //= partials/_news-section.html
+
+                //= partials/_blog-section.html
+
+                //= partials/_pagination.html
+
+                <div class="services-block">
+                    <div class="services-block__item">
+                        <div class="services-block__item-name">
+                            <a href="javascript:;" class="service-block__item-link">Услуга с длинным заголовоком, скидкой и указанием количества часов (или другого)</a>
+                            <p class="services-block__item-text">При смене или добавлении видов деятельности не забудьте внести соответствующие изменения в ЕГРИП.</p>
+                        </div>
+                        <div class="services-block__item-content">
+                            <div class="services-block__item-col">
+                                <span class="services-block__item-col-info">Кол-во часов</span>
+                                <p class="services-block__item-col-value">256-350</p>
+                            </div>
+                            <div class="services-block__item-col">
+                                <span class="services-block__item-col-info old-price">4900 ₽</span>
+                                <p class="services-block__item-col-value">3900 ₽</p>
+                            </div>
+                            <div class="services-block__item-col">
+                                <a href="javascript:;" class="services-block__item-order">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services-block__item">
+                        <div class="services-block__item-name">
+                            <a href="javascript:;" class="service-block__item-link">Услуга с длинным заголовоком, скидкой и указанием количества часов (или другого)</a>
+                            <p class="services-block__item-text">При смене или добавлении видов деятельности не забудьте внести соответствующие изменения в ЕГРИП.</p>
+                        </div>
+                        <div class="services-block__item-content">
+                            <div class="services-block__item-col">
+                                <span class="services-block__item-col-info">Кол-во часов</span>
+                                <p class="services-block__item-col-value">256-350</p>
+                            </div>
+                            <div class="services-block__item-col">
+                                <span class="services-block__item-col-info old-price">4900 ₽</span>
+                                <p class="services-block__item-col-value">3900 ₽</p>
+                            </div>
+                            <div class="services-block__item-col">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="services-block__item">
+                        <div class="services-block__item-name">
+                            <a href="javascript:;" class="service-block__item-link">Услуга с длинным заголовоком, скидкой и указанием количества часов (или другого)</a>
+                            <p class="services-block__item-text">При смене или добавлении видов деятельности не забудьте внести соответствующие изменения в ЕГРИП.</p>
+                        </div>
+                        <div class="services-block__item-content">
+                            <div class="services-block__item-col">
+                                
+                            </div>
+                            <div class="services-block__item-col">
+                                <span class="services-block__item-col-info old-price">4900 ₽</span>
+                                <p class="services-block__item-col-value">3900 ₽</p>
+                            </div>
+                            <div class="services-block__item-col">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                //= partials/_anouncement.html
+            </div>
+
+        </section>
+
+        
+    </main>
+
+    //= partials/_footer.html
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/image-carousel.js"></script>
+    <script src="js/date-carousel.js"></script>
+    <script src="js/footer.js"></script>
+</body>
+</html>
